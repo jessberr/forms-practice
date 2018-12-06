@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leave a Review</title>
+  </head>
+  <body>
+    <h1>We want to hear from you!</h1>
+    <form method="post">
+      <fieldset>
+        <legend>Your Details:</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" name="username" required="required"/><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required=""/><br>
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>Your Review:</legend>
+        <label for="hear-about">How did you hear about us?</label>
+        <select name="hear-about">
+          <option value="google">Google</option>
+          <option value="instagram">Instagram</option>
+          <option value="friend">Friend</option>
+        </select><br>
+        <label for="liked">Would you visit again?</label>
+        <input type="radio" name="liked" value="yes"/>
+        Yes
+        <input type="radio" name="liked" value="no"/>
+        No
+        <input type="radio" name="liked" value="maybe"/>
+        Maybe <br>
+        <label for="comments">Comments:</label><br>
+        <textarea name="comments" rows="4" cols="50"></textarea><br>
+        <input type="checkbox" name="emails"/>
+        <label for="emails">Sign me up for email updates</label><br>
+        <label for="subscribe"></label>
+        <input type="submit" name="subscribe" value="Submit Review"/>
+      </fieldset>
+    </form>
+  </body>
+</html>
